@@ -7,7 +7,7 @@ CORS(app)  # Enable CORS for all routes
 
 sentiment_model = pipeline("sentiment-analysis")
 
-@app.route('/analyze', methods=['POST'])
+@app.route('/api/analyze', methods=['POST'])
 def analyze_sentiment():
     data = request.get_json()
     if data and 'text' in data:

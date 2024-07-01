@@ -17,7 +17,7 @@ const loading = ref(false)
 const analyzeSentiment = async () => {
     try {
         loading.value = true
-        const response = await fetch('http://127.0.0.1:5000/analyze', {
+        const response = await fetch('https://text-tone-analyzer-backend-5e8ab8740046.herokuapp.com/api/analyze', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
