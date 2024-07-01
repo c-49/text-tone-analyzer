@@ -32,7 +32,7 @@ Analyze the tone of a text message
     python app.py
     ```
 
-Additionally, you can also do:
+Additionally, you can also do this to start the app:
 
 ```bash
 cd ..
@@ -56,6 +56,8 @@ pnpm start-backend
     ```bash
     pnpm dev
     ```
+
+Alternatively, you can run `build.bat` to install needed items.
 
 ### Running the Project
 

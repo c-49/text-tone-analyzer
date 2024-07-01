@@ -1,2 +1,2 @@
-web: cd back && gunicorn app:app
+web: gunicorn app:app
 
