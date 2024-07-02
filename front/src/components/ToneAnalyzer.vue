@@ -25,7 +25,7 @@ const analyzeSentiment = async () => {
             body: JSON.stringify({ text: text.value })
         })
         const result = await response.json()
-        emit('on-analyzed', result, text.value)
+        emit('on-analyzed', result[0], text.value)
         text.value = ''
     } catch (error) {
         console.error('Error:', error)
